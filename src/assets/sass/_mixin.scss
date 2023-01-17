@@ -1,0 +1,57 @@
+$lg-desktop-width: 1200px;
+$desktop-width: 1024px;
+$tablet-width: 991px;
+$phone-width: 767px;
+
+
+@mixin breakepoint_down($media) {
+  @if $media ==md {
+    @media screen and (max-width:$desktop-width) {
+      @content;
+    }
+  }
+
+  @else if $media ==lg {
+    @media screen and (max-width:$lg-desktop-width) {
+      @content;
+    }
+  }
+
+  @else if $media ==sm {
+    @media screen and (max-width:$tablet-width) {
+      @content;
+    }
+  }
+
+  @else if $media ==exsm {
+    @media screen and (max-width:$phone-width) {
+      @content;
+    }
+  }
+}
+
+// @mixin breakepoint_up($media) {
+//   @if $media ==md {
+//     @media screen and (max-width:1024px) {
+//       @content;
+//     }
+//   }
+
+//   @else if $media ==lg {
+//     @media screen and (max-width:1024px) {
+//       @content;
+//     }
+//   }
+// }
+
+// @mixin d-flex {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+// }
+
+// @mixin align_items($pos) {
+//   -webkit-box-align: $pos;
+//   -ms-flex-align: $pos;
+//   align-items: $pos;
+// }

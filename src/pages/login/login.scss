@@ -1,0 +1,96 @@
+.login {
+  width: 100%;
+  display: flex;
+
+  .loginContant {
+    flex: 6;
+    margin-left: 150px;
+
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left {
+        flex: 2;
+        padding: 20px;
+        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.18);
+        -moz-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.18);
+        border-radius: 5px;
+        position: relative;
+
+        .editbutton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          color: gray;
+          background-color: rgba(9, 94, 9, 0.329);
+          border-radius: 0px 5px 0 0;
+          cursor: pointer;
+        }
+
+        .item {
+          display: flex;
+          gap: 20px;
+
+          .itemImage {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            .itemtitle {
+              margin-bottom: 10px;
+              color: #555;
+            }
+
+            .detailsitem {
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .itemkey {
+                font-weight: bold;
+                color: gray;
+                margin-right: 5px;
+              }
+
+              .itemvalue {
+                font-weight: 300;
+              }
+            }
+          }
+        }
+
+        .title {
+          font-weight: bold;
+          font-size: 16px;
+          color: lightgray;
+          margin-bottom: 20px;
+        }
+      }
+
+      .right {
+        flex: 3;
+      }
+    }
+
+    .bottom {
+      box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.18);
+      -webkit-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.18);
+      -moz-box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.18);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+
+      .title {
+        font-size: 16px;
+        color: lightgray;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
